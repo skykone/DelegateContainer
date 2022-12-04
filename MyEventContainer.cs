@@ -30,7 +30,7 @@ public class MyEventContainer
         int max = (MyEventArray.Length - 1);
         if (index < 0 || index > max )
         {
-            throw new Exception("the provided argument must be greater than 0 and less than " + max);
+            throw new Exception("the provided argument must be 0 or greater, and less than " + max);
         }     
     }
     
