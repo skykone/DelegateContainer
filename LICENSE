@@ -19,3 +19,12 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+--------------------------
+
+The files in this repository are primarily intended to be used with the uNode Unity asset. 
+Although the files in this repository are permitted to be used without uNode, and might even be possible to use without uNode,
+they are primarily intended to be used with uNode.
+The above license only applies to the specific files in this repository.
+The above license does not necessarily apply to uNode itself.
+When using the uNode Unity asset itself, you may be required to have a properly licensed version of uNode from the Unity Asset Store or otherwise before you may use it.
