@@ -40,7 +40,7 @@ public class MyEventContainer
         MyEventArray[index] = myEventHandler;
     }
 
-    public static void UnSubscribeMyEvent(int index, EventHandler<MyEventArgs> myEventHandler)
+    public static void UnSubscribeMyEvent(int index)
     {
         _CheckMyIndex(index);
         MyEventArray[index] = null;
