@@ -1,5 +1,12 @@
+//v0.2
 
 using System;
+
+public class MyOtherEventArgs : EventArgs
+{
+    public float MyOtherFloatArgTypeA { get; set; }
+    public int MyOtherIntArgTypeB { get; set; }
+}
 
 public class MyEventArgs : EventArgs
 {
@@ -10,11 +17,11 @@ public class MyEventArgs : EventArgs
 public class MyEventContainer
 {
 
-    public static EventHandler<MyEventArgs>[] MyEventArray = new EventHandler<MyEventArgs>[30];
+    public static EventHandler<EventArgs>[] MyEventArray = new EventHandler<EventArgs>[30];
 
-    public static void TriggerMyEvent(int index, MyEventArgs myEventArgs, object sender = null)
+    public static void TriggerMyEvent(int index, EventArgs myEventArgs, object sender = null)
     {
-        EventHandler<MyEventArgs> handler = MyEventArray[index];
+        EventHandler<EventArgs> handler = MyEventArray[index];
         if (handler != null)
         {
             handler(sender, myEventArgs);
@@ -34,7 +41,7 @@ public class MyEventContainer
         }     
     }
     
-    public static void SubscribeMyEvent(int index, EventHandler<MyEventArgs> myEventHandler)
+    public static void SubscribeMyEvent(int index, EventHandler<EventArgs> myEventHandler)
     {
         _CheckMyIndex(index);
         MyEventArray[index] = myEventHandler;
